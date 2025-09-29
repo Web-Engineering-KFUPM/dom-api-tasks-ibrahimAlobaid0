@@ -12,6 +12,7 @@ TODO1: Welcome Board
 When the page loads, display a welcome message 
 inside the <p> element with id="t1-msg".
 
+
 ✅ Task:
 - Select the element with id "t1-msg".
 - Change its text to "Hello, World!".
@@ -19,9 +20,13 @@ inside the <p> element with id="t1-msg".
 💡 Hint:
 document.getElementById("t1-msg").innerHTML = "Hello, World!";
 */
- 
+document.addEventListener("DOMContentLoaded", function() {
+    const welcomeMessage = document.getElementById("t1-msg");
+    welcomeMessage.innerHTML = "Hello, World!";
+});
 
 /*  
+
 =======================================
 TODO2: Interaction Corner
 ---------------------------------------
