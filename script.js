@@ -128,7 +128,7 @@ const tempElement = document.getElementById("t4-temp");
 const humElement = document.getElementById("t4-hum");
 const windElement = document.getElementById("t4-wind");
 weatherButton.addEventListener("click", function () {
-    fetch("https://api.openweathermap.org/data/2.5/weather?q=Dammam&appid=eab488dbf8b00d64ed4f9cac7bc8ec5c&units=metric")
+    fetch("https://api.openweathermap.org/data/2.5/weather?q=Dammam,SA&appid=eab488dbf8b00d64ed4f9cac7bc8ec5c&units=metric")
         .then(function (response) {
     if (!response.ok) {                 // not 2xx → treat as an error
       throw new Error("HTTP " + response.status);
